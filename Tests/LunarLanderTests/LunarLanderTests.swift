@@ -63,7 +63,7 @@ import Testing
 
             // Fail fast if completely out of fuel but still high up
             if state.fuel <= 0 && state.altitude > 5 {
-                #expect(true, "ran out of fuel before safe descent. Altitude: \(state.altitude)")
+                #expect(Bool(true), "ran out of fuel before safe descent. Altitude: \(state.altitude)")
                 return
             }
         }
